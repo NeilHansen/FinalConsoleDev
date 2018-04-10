@@ -15,7 +15,7 @@ void UDisplayGamertag::DisplayGamertag()
 		if(userIdentityPtr.IsValid())
 		{
 			FString	nickname =	OnlineSub->GetIdentityInterface()->GetPlayerNickname(0);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(*nickname));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(*nickname));
 		}
 	}
 
